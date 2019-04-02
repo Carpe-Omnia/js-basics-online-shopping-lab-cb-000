@@ -41,7 +41,15 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  var dex = cart.findIndex(function(element){
+    return element.itemName == item
+  })
+  if(!!dex){
+    return cart.splice(dex, 1)
+  }
+  else{
+    return "That item is not in your cart."
+  }
 }
 
 function placeOrder(cardNumber) {
