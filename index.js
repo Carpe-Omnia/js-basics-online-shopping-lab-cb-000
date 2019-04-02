@@ -44,7 +44,7 @@ function removeFromCart(item) {
   var dex = cart.findIndex(function(element){
     return element.itemName == item
   })
-  if(cart.splice(dex, 1) != []){
+  if(dex !== -1){
     return cart.splice(dex, 1)
   }
   else{
