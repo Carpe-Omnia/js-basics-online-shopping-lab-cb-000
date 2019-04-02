@@ -24,7 +24,7 @@ function viewCart() {
       thing += ` ${cart[i].itemName} at $${cart[i].itemPrice},`
     }
     thing += ` and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`
-    return thing ; 
+    return thing ;
   }
 }
 
